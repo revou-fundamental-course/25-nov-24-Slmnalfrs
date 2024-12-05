@@ -1,0 +1,190 @@
+/* Gaya Dasar */
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Mengatur font yang digunakan */
+    margin: 0; /* Menghapus margin default */
+    padding: 0; /* Menghapus padding default */
+    background: linear-gradient(135deg, #a8e6cf, #ffffff); /* Mengatur latar belakang dengan gradasi */
+    display: flex; /* Menggunakan Flexbox untuk tata letak */
+    flex-direction: column; /* Mengatur arah flex menjadi kolom */
+    align-items: center; /* Menyelaraskan item flex di tengah secara horizontal */
+    justify-content: center; /* Menyelaraskan item flex di tengah secara vertikal */
+    min-height: 100vh; /* Mengatur tinggi minimum menjadi 100% dari viewport */
+}
+
+/* Header */
+header {
+    text-align: center; /* Mengatur teks di header untuk berada di tengah */
+    margin-bottom: 25px; /* Memberikan jarak di bawah header */
+    animation: fadeIn 1s ease-out; /* Menambahkan animasi fade-in pada header */
+}
+
+header h1 {
+    font-size: 3rem; /* Ukuran font untuk judul utama */
+    font-weight: bold; /* Mengatur ketebalan font menjadi tebal */
+    color: #2d3436; /* Mengatur warna teks */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada teks */
+    margin-bottom: 10px; /* Memberikan jarak di bawah judul */
+}
+
+header h1 i {
+    color: #ff2600; /* Mengatur warna ikon di samping judul */
+    margin-right: 12px; /* Memberikan jarak di antara ikon dan teks */
+}
+
+header p {
+    font-size: 1.2rem; /* Ukuran font untuk paragraf dalam header */
+    color: #636e72; /* Mengatur warna teks paragraf */
+    max-width: 550px; /* Mengatur lebar maksimum paragraf */
+    margin: 0 auto; /* Mengatur margin otomatis untuk tengah */
+    line-height: 1.6; /* Mengatur jarak antar baris */
+}
+
+.container {
+    display: flex; /* Menggunakan Flexbox untuk tata letak kontainer */
+    flex-direction: column; /* Mengatur arah flex menjadi kolom */
+    justify-content: center; /* Menyelaraskan item flex di tengah secara vertikal */
+    align-items: center; /* Menyelaraskan item flex di tengah secara horizontal */
+    padding: 30px; /* Memberikan padding di dalam kontainer */
+    border-radius: 15px; /* Membuat sudut kontainer melengkung */
+    max-width: 600px; /* Mengatur lebar maksimum kontainer */
+    width: 90%; /* Mengatur lebar kontainer menjadi 90% dari lebar elemen induknya */
+}
+
+/* Formulir */
+form {
+    background: #ffffff; /* Mengatur warna latar belakang formulir */
+    padding: 30px 40px; /* Memberikan padding atas/bawah dan kiri/kanan */
+    border-radius: 18px; /* Membuat sudut formulir melengkung */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada formulir */
+    width: 100%; /* Mengatur lebar formulir menjadi 100% dari kontainer */
+    display: flex; /* Menggunakan Flexbox untuk tata letak formulir */
+    flex-direction: column; /* Mengatur arah flex menjadi kolom */
+    gap: 25px; /* Memberikan jarak antar elemen di dalam formulir */
+    animation: slideIn 0.8s ease-out; /* Menambahkan animasi slide-in pada formulir */
+}
+
+form label {
+    font-size: 1.1rem; /* Ukuran font untuk label */
+    font-weight: 600; /* Mengatur ketebalan font label */
+    color: #2d3436; /* Mengatur warna teks label */
+}
+
+form input, form select {
+    padding: 14px; /* Memberikan padding pada input dan select */
+    border: 1px solid #dcdde1; /* Mengatur border input dan select */
+    border-radius: 12px; /* Membuat sudut input dan select melengkung */
+    font-size: 1rem; /* Ukuran font untuk input dan select */
+    background-color: #f8f9fa; /* Mengatur warna latar belakang input dan select */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Menambahkan transisi pada border dan bayangan */
+}
+
+form input:focus, form select:focus {
+    border-color: #00cec9; /* Mengubah warna border saat fokus */
+    outline: none; /* Menghapus outline default */
+    box-shadow: 0 0 10px rgba(0, 206, 201, 0.4); /* Menambahkan bayangan saat fokus */
+}
+
+/* Tombol */
+form button {
+    padding: 14px 22px; /* Memberikan padding pada tombol */
+    border: none; /* Menghapus border default tombol */
+    border-radius: 12px; /* Membuat sudut tombol melengkung */
+    font-size: 1rem; /* Ukuran font untuk tombol */
+    font-weight: bold; /* Mengatur ketebalan font tombol */
+    cursor: pointer; /* Mengubah kursor menjadi pointer saat hover */
+    transition: transform 0.2s ease, box-shadow 0.3s ease; /* Menambahkan transisi pada transformasi dan bayangan */
+    display: flex; /* Menggunakan Flexbox untuk tata letak tombol */
+    align-items: center; /* Menyelaraskan ikon dan teks di tengah secara vertikal */
+    justify-content: center; /* Menyelaraskan ikon dan teks di tengah secara horizontal */
+    color: white; /* Mengatur warna teks tombol */
+}
+
+form button i {
+    margin-right: 8px; /* Memberikan jarak di antara ikon dan teks tombol */
+}
+
+form button:hover {
+    transform: translateY(-3px); /* Mengangkat tombol saat hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan saat hover */
+}
+
+#calculate {
+    background-color: #00cec9; /* Mengatur warna latar belakang tombol hitung */
+}
+
+#calculate:hover {
+    background-color: #00b894; /* Mengubah warna tombol hitung saat hover */
+}
+
+#reset {
+    background-color: #d63031; /* Mengatur warna latar belakang tombol reset */
+}
+
+#reset:hover {
+    background-color: #c0392b; /* Mengubah warna tombol reset saat hover */
+}
+
+/* Hasil */
+#result {
+    background: #f4f9f9; /* Mengatur warna latar belakang hasil */
+    border: 2px solid #00cec9; /* Mengatur border hasil */
+    border-radius: 15px; /* Membuat sudut hasil melengkung */
+    padding: 25px; /* Memberikan padding di dalam hasil */
+    margin-top: 25px; /* Memberikan jarak di atas hasil */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada hasil */
+    text-align: center; /* Mengatur teks hasil untuk berada di tengah */
+    animation: fadeIn 0.5s ease-out; /* Menambahkan animasi fade-in pada hasil */
+}
+
+.result-box {
+    background-color: #ffffff; /* Mengatur warna latar belakang kotak hasil */
+    padding: 20px; /* Memberikan padding di dalam kotak hasil */
+    border-radius: 15px; /* Membuat sudut kotak hasil melengkung */
+    margin-top: 15px; /* Memberikan jarak di atas kotak hasil */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada kotak hasil */
+}
+
+#bmiValue {
+    font-size: 2rem; /* Ukuran font untuk nilai BMI */
+    font-weight: bold; /* Mengatur ketebalan font nilai BMI */
+    color: #00cec9; /* Mengatur warna teks nilai BMI */
+}
+
+#bmiCategory {
+    font-size: 1.1rem; /* Ukuran font untuk kategori BMI */
+    margin-top: 12px; /* Memberikan jarak di atas kategori BMI */
+    color: #2d3436; /* Mengatur warna teks kategori BMI */
+}
+
+/* Footer */
+footer {
+    margin-top: 25px; /* Memberikan jarak di atas footer */
+    font-size: 0.9rem; /* Ukuran font untuk footer */
+    color: #636e72; /* Mengatur warna teks footer */
+    text-align: center; /* Mengatur teks footer untuk berada di tengah */
+}
+
+footer i {
+    color: #d63031; /* Mengatur warna ikon di dalam footer */
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Memulai dengan transparansi 0 */
+    }
+    to {
+        opacity: 1; /*menjadi sepenuhnya terlihat */
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-30px); /* Memulai dari posisi di atas */
+        opacity: 0; /* Memulai dengan transparansi 0 */
+    }
+    to {
+        transform: translateY(0); /*berada di posisi normal */
+        opacity: 1; /*sepenuhnya terlihat */
+    }
+}
